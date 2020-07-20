@@ -17,7 +17,7 @@
 #ifndef ERLCMD_H
 #define ERLCMD_H
 
-#include <ei.h>
+#include "ei_copy/ei.h"
 
 #ifdef __WIN32__
 #include <windows.h>

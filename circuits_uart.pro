@@ -124,11 +124,11 @@ win32 {
 unix {
     QMAKE_CFLAGS += -D_GNU_SOURCE
     INCLUDEPATH += /usr/lib/erlang/usr/include
-    LIBS += -L/usr/lib/erlang/usr/lib -lei
+    LIBS += -L$(HOME)/.asdf/installs/erlang/22.3.4.1/usr/lib -lei
 }
 osx {
-    INCLUDEPATH += /usr/local/Cellar/erlang/18.3/lib/erlang/usr/include
-    LIBS += -framework CoreFoundation
+    INCLUDEPATH += $(HOME)/.asdf/installs/erlang/22.3.4.1/usr/include
+    LIBS += -framework CoreFoundation -framework IOKit
 }
 
 QMAKE_CFLAGS += -std=c99

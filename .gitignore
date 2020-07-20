@@ -28,3 +28,6 @@ circuits_uart-*.tar
 
 # Ignore debug logs
 circuits_uart.log
+
+# Ignore Qt User settings
+circuits_uart.pro.user

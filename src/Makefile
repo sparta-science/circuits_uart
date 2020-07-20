@@ -31,7 +31,7 @@ CFLAGS += -std=c99 -D_GNU_SOURCE
 # may give some more hints. By default, log messages are appended to circuits_uart.log.
 # See src/circuits_uart.c to change this. Be sure to rebuild everything by invoking
 # "mix clean" and then "mix compile", so that the flag takes effect.
-#CFLAGS += -DDEBUG
+CFLAGS += -DDEBUG
 
 SRC=$(wildcard src/*.c)
 
